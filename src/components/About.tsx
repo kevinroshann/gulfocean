@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 
 export default function About() {
@@ -38,7 +39,7 @@ export default function About() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="w-full md:w-1/2"
         >
-          <img
+          <Image
             src="/image.jpg" // Replace with your actual image path
             alt="About Us"
             className="w-full h-auto rounded-xl"

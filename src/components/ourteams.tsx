@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function OurTeam() {
     // Sample team data (Replace with real data)
     const teamMembers = [
@@ -38,7 +40,7 @@ export default function OurTeam() {
             <div key={index} className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center text-center">
               {/* Image Container */}
               <div className="w-28 h-28 rounded-full overflow-hidden mb-4">
-                <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+                <Image src={member.image} alt={member.name} className="w-full h-full object-cover" />
               </div>
   
               {/* Name */}
